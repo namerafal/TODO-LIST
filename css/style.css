@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+*,::after, ::before {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Lato, sans-serif;
+}
+
+.list__item--done {
+    color: brown;
+    direction: var(+);
+}
+
+body {
+    background-color:rgb(238, 234, 234);
+}
