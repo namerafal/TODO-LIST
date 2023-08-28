@@ -51,15 +51,15 @@
 
     for (const task of tasks) {
       htmlString += `
-              <li
-              class="list__item${task.done ? " list__item--done" : ""}"
-              >
-              <button class="js-done">zrobione?</button>
-              <button class="js-remove">🗑</button>
-                  ${task.content} 
-              </li>
-              `;
-    };
+        <li
+          class="list__item${task.done ? " list__item--done" : ""}"
+        >
+          <button class="js-done">zrobione?</button>
+          <button class="js-remove">🗑</button>
+          ${task.content} 
+        </li>
+      `;
+    }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
@@ -74,8 +74,8 @@
     const newTaskContent = newTaskElement.value.trim();
 
     if (newTaskContent !== "") {
-        addNewTask(newTaskContent);
-        newTaskElement.value = "";
+      addNewTask(newTaskContent);
+      newTaskElement.value = "";
     }
 
     newTaskElement.focus();

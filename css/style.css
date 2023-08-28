@@ -1,20 +1,21 @@
 html {
     box-sizing: border-box;
-}
+};
 
 *,::after, ::before {
     box-sizing: inherit;
-}
+};
 
 body{
     font-family: Lato, sans-serif;
-}
+    word-break: break-word;
+};
 
 .list__item--done {
-    color: brown;
+    color: #a52a2a;
     direction: var(+);
-}
+};
 
 body {
-    background-color:rgb(238, 234, 234);
-}
+    background-color:#eeeaea;
+};
