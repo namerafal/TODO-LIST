@@ -2,16 +2,16 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 20px;
-};
+}
 
 .form__input {
     display: flex;
 
-}; 
+}
 
 .form__button {
     background-color: #008080;
     color: #ffffff;
     padding: 5px;
     border: none;
-};
+}
