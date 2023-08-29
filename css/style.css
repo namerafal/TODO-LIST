@@ -2,20 +2,18 @@ html {
     box-sizing: border-box;
 }
 
-*,::after, ::before {
+*, ::after, ::before {
     box-sizing: inherit;
 }
 
-body{
+body {
+    display: grid;
+    justify-content: center;
+    background-color: #eeeeee;
     font-family: Lato, sans-serif;
     word-break: break-word;
 }
 
 .list__item--done {
-    color: #a52a2a;
-    direction: var(+);
-}
-
-body {
-    background-color:#eeeaea;
+    text-decoration: line-through;
 }
