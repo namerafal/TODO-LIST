@@ -4,9 +4,12 @@
     grid-gap: 20px;
 }
 
-.form__input {
-    display: flex;
-
+@media (max-width: 550px) {
+    .form {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 15px;
+    }
 }
 
 .form__button {
