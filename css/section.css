@@ -1,5 +1,5 @@
 .section {
-    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .section__header {
@@ -7,6 +7,10 @@
 }
 
 .section__body {
-    border-top: 2px solid #eeeeee;
+    border-top: 2px solid hsl(0, 0%, 93%);
     padding: 15px;
+}
+
+.section__tasks {
+    padding-inline-start: 0px;
 }
