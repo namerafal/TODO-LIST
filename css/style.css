@@ -9,7 +9,7 @@ html {
 body {
     display: grid;
     justify-content: center;
-    background-color: #eeeeee;
+    background-color: hsl(0, 0%, 93%);
     font-family: Lato, sans-serif;
     word-break: break-word;
 }
