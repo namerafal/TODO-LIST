@@ -1,8 +1,12 @@
 .tasks {
+    padding-inline-start: 0px;
+}
+
+.tasks__list {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    grid-gap: 5px;
+    grid-gap: 10px;
     border-bottom: 2px solid hsl(0, 0%, 93%);
     padding: 10px;
     margin: 10px 0px;
@@ -30,11 +34,9 @@
 .tasks__buttons--done {
     background-color: hsl(122.47deg 65.1% 29.22%);
     color: hsl(39, 77%, 83%);
-    font-size: 18px;
 }
 
 .tasks__buttons--remove {
     background-color: hsl(348, 83%, 47%);
     color: hsl(0, 0%, 100%);
-    font-size: 18px;
 }
