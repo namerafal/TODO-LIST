@@ -1,5 +1,6 @@
 .tasks {
     padding-inline-start: 0px;
+    margin: 0;
 }
 
 .tasks__list {
@@ -9,7 +10,7 @@
     grid-gap: 10px;
     border-bottom: 2px solid hsl(0, 0%, 93%);
     padding: 10px;
-    margin: 10px 0px;
+    margin: 0 0 10px;
 }
 
 .task__item--done {
