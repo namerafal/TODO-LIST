@@ -2,47 +2,48 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista zadań</title>
-    <link rel="icon" href="images/icon_list.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/container.css">
-    <link rel="stylesheet" href="css/section.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/tasks.css">
-    <script defer src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista zadań</title>
+  <link rel="icon" href="images/icon_list.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/tasks.css">
+  <script defer src="js/script.js"></script>
 </head>
 
 <body class="body">
-    <main class="container">
-        <header>
-            <h1>Lista zadań</h1>
-        </header>
-        <section class="section">
-            <h2 class="section__header">Dodaj nowe zadanie</h2>
-            <div class="section__body">
-                <form class="form js-form">
-                    <input class="form__input js-newTask" placeholder="Co jest do zrobienia?" autofocus>
-                    <button class="form__button">Dodaj zadanie</button>
-                </form>
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section__header">Lista zadań</h2>
-            <div class="section__body">
-                <ul class="tasks js-tasks"></ul>
-            </div>
-        </section>
-    </main>
+  <main class="container">
+    <header>
+      <h1>Lista zadań</h1>
+    </header>
+    
+    <section class="section">
+      <h2 class="section__header">Dodaj nowe zadanie</h2>
+      <div class="section__body">
+        <form class="form js-form">
+          <input class="form__input js-newTask" placeholder="Co jest do zrobienia?" autofocus>
+          <button class="form__button">Dodaj zadanie</button>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__header">Lista zadań</h2>
+      <div class="section__body">
+        <ul class="tasks js-tasks"></ul>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
