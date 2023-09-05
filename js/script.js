@@ -2,22 +2,17 @@
   const tasks = [];
 
   const addNewTask = (newTaskContent) => {
-    tasks.push({
-      content: newTaskContent,
-    });
-
+    tasks.push({ content: newTaskContent });
     render();
   };
 
   const removeTask = (taskIndex) => {
     tasks.splice(taskIndex, 1);
-
     render();
   };
 
   const toggleTaskDone = (taskIndex) => {
     tasks[taskIndex].done = !tasks[taskIndex].done;
-
     render();
   };
 
@@ -42,10 +37,10 @@
 
 
   const render = () => {
-    let htmlString = "";
+    let tasksListHTMLContent = "";
 
     for (const task of tasks) {
-      htmlString += `
+      tasksListHTMLContent += `
         <li class="tasks__list">
           <button class="js-done tasks__buttons tasks__buttons--done">
            ${task.done ? "✔" : " "}
@@ -58,7 +53,7 @@
       `;
     }
 
-    document.querySelector(".js-tasks").innerHTML = htmlString;
+    document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
     bindEvents();
   };
