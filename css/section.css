@@ -2,11 +2,33 @@
     background-color: hsl(0, 0%, 100%);
 }
 
+.section__body {
+    border-top: 2px solid hsl(0, 0%, 93%);
+    padding: 15px;
+}
+
 .section__header--position {
     padding-left: 15px;
 }
 
-.section__body {
-    border-top: 2px solid hsl(0, 0%, 93%);
-    padding: 15px;
+.section__header--buttons {
+    display: flex;
+    grid-template-columns: 5fr 4fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.section__buttons {
+    justify-content: space-between;
+    border: none;
+    background: none;
+    color: hsl(180, 100%, 25%);
+    margin-right: 15px;
+}
+
+.section__buttons:disabled {
+    border: none;
+    background: none;
+    color: hsla(180, 42%, 62%, 0.541);
 }
