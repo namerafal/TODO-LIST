@@ -13,18 +13,30 @@
 
 .section__header--buttons {
     display: flex;
-    grid-template-columns: 5fr 4fr;
     align-items: center;
     justify-content: space-between;
 }
 
+@media (max-width: 720px) {
+    .section__header--buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 
 .section__buttons {
-    justify-content: space-between;
     border: none;
     background: none;
     color: hsl(180, 100%, 25%);
     margin-right: 15px;
+}
+
+@media (max-width: 720px) {
+    .section__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px auto 15px;
+    }
 }
 
 .section__buttons:disabled {
