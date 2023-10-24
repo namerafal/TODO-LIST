@@ -19,9 +19,10 @@
 
 @media (max-width: 720px) {
     .section__header--buttons {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-flow: column;
+        align-items: stretch;
     }
+
 }
 
 .section__buttons {
@@ -33,14 +34,19 @@
 
 @media (max-width: 720px) {
     .section__buttons {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0px auto 15px;
+        margin: 10px auto;
     }
 }
 
+@media (max-width: 720px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}
+
+
 .section__buttons:disabled {
-    border: none;
-    background: none;
     color: hsla(180, 42%, 62%, 0.541);
 }
