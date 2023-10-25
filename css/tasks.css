@@ -26,10 +26,7 @@
     border: none;
     width: 30px;
     height: 30px;
-}
-
-.tasks__buttons:hover {
-    box-shadow: 0px 2px 3px 0px hsl(180, 18%, 36%);
+    transition: filter 0.5s;
 }
 
 .tasks__buttons:active {
@@ -37,11 +34,15 @@
 }
 
 .tasks__buttons--done {
-    background-color: hsl(122.47deg 65.1% 29.22%);
+    background-color: hsl(122, 65%, 29%);
     color: hsl(39, 77%, 83%);
 }
 
 .tasks__buttons--remove {
     background-color: hsl(348, 83%, 47%);
     color: hsl(0, 0%, 100%);
+}
+
+.tasks__buttons:hover {
+    filter: brightness(1.3);
 }

@@ -22,7 +22,6 @@
         flex-flow: column;
         align-items: stretch;
     }
-
 }
 
 .section__buttons {
@@ -30,23 +29,22 @@
     background: none;
     color: hsl(180, 100%, 25%);
     margin-right: 15px;
+    transition: filter 0.5s;
+}
+
+.section__buttons:hover {
+    filter: saturate(350%);
 }
 
 @media (max-width: 720px) {
     .section__buttons {
         margin: 10px auto;
-    }
-}
-
-@media (max-width: 720px) {
-    .buttons {
         display: flex;
         flex-direction: column;
         padding-bottom: 15px;
     }
 }
 
-
 .section__buttons:disabled {
-    color: hsla(180, 42%, 62%, 0.541);
+    color: hsla(180, 22%, 62%, 0.603);
 }
