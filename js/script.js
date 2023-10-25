@@ -76,8 +76,6 @@
            <button class= "js-hideDoneButton section__buttons">${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
            <button class= "js-markAllDoneButton section__buttons"${tasks.every(({ done }) => done) ? "disabled" : " "} >Ukończ wszystkie</button>
            ` : "";
-
-
     document.querySelector(".js-buttons").innerHTML = taskListHeaderButtons;
   };
 
