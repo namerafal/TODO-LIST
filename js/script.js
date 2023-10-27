@@ -16,8 +16,8 @@
     render();
   };
 
-  const removeTask = (removedTask) => {
-    tasks = tasks.filter((_, task) => task !== removedTask);
+  const removeTask = (taskIndex) => {
+    tasks = tasks.filter((_, index) => index !== taskIndex);
     render();
   };
 
@@ -73,7 +73,7 @@
 
   const renderHeaderButtons = () => {
     const taskListHeaderButtons = tasks.length > 0 ? `
-           <button class= "js-hideDoneButton section__buttons">${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
+           <button class= "js-hideDoneButton section__buttons" ${tasks.some(({ done }) => done) ? " " : "disabled"}>${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
            <button class= "js-markAllDoneButton section__buttons"${tasks.every(({ done }) => done) ? "disabled" : " "} >Ukończ wszystkie</button>
            ` : "";
     document.querySelector(".js-buttons").innerHTML = taskListHeaderButtons;
@@ -82,6 +82,7 @@
   const bindHeaderButtonsEvents = () => {
     const someTaskDone = tasks.some(({ done }) => done);
     const hideTaskDoneButton = document.querySelector(".js-hideDoneButton");
+
     if (someTaskDone) {
       hideTaskDoneButton.addEventListener("click", () => {
         toggleHideTask();
@@ -90,6 +91,7 @@
 
 
     const doneAllButton = document.querySelector(".js-markAllDoneButton");
+
     if (doneAllButton) {
       doneAllButton.addEventListener("click", () => {
         allTasksDone();
