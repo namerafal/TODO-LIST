@@ -10,7 +10,6 @@
     grid-gap: 10px;
     border-bottom: 2px solid hsl(0, 0%, 93%);
     padding: 10px;
-    margin: 0 0 10px;
 }
 
 .tasks__list--hiden {

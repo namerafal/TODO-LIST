@@ -17,7 +17,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 895px) {
     .section__header--buttons {
         flex-flow: column;
         align-items: stretch;
@@ -36,7 +36,7 @@
     filter: saturate(350%);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 895px) {
     .section__buttons {
         margin: 10px auto;
         display: flex;
