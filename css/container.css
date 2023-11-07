@@ -1,11 +1,5 @@
 .container {
-    display: grid;
-    grid-template-columns: minmax(300px, 900px);
-    grid-gap: 10px;
-}
-
-@media (max-width: 895px) {
-    .container {
-        margin: 15px;
-    }
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto;
 }

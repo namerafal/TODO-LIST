@@ -6,9 +6,7 @@ html {
     box-sizing: inherit;
 }
 
-.body {
-    display: grid;
-    justify-content: center;
+body {
     background-color: hsl(0, 0%, 93%);
     font-family: 'Montserrat', sans-serif;
     word-break: break-word;

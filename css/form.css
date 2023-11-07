@@ -1,28 +1,26 @@
 .form {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-gap: 20px;
 }
 
-@media (max-width: 895px) {
+@media (max-width: 767px) {
     .form {
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 15px;
+        grid-template-columns: 1fr;
     }
 }
 
 .form__input {
-    padding: 5px;
-    border: 2px solid hsl(0, 0%, 93%);
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 93%);
 }
 
 .form__button {
     background-color: hsl(180, 100%, 25%);
     transition: background-color 1s, transform 0.2s;
-    border: 1px solid hsl(180, 95%, 31%);
+    border: none;
     color: hsla(0, 0%, 100%, 0.993);
-    padding: 12px;
+    padding: 10px;
 }
 
 .form__button:hover {
@@ -30,12 +28,13 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 895px) {
+@media (max-width: 767px) {
     .form__button:hover {
         transform: scale(1.04);
     }
 }
 
 .form__button:active {
-    box-shadow: inset 0px 1px 3px 2px hsl(180, 98%, 21%);
+    background-color: hsl(180, 100%, 34%);
+    transition: none;
 }
